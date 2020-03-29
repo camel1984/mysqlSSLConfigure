@@ -208,6 +208,12 @@ default_md	= sha256			# which md to use.
 
 Be sure it is sha256.
 
+To compile mysql client program with SSL support, define HAVE_OPENSSL, e.g, define it in gcc:
+
+CC = gcc -DHAVE_OPENSSL
+
+Refer to the Makefile for more details.
+
 
 
 
