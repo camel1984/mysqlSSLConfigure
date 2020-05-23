@@ -192,8 +192,10 @@ commonly used commands:
 
 mysql -h ec2-34-201-73-228.compute-1.amazonaws.com -u sampadm -p --ssl-ca=ca-cert.pem --ssl-cert=client-cert.pem --ssl-key=client-key.pem sampdb
 
-
+client:
 mysql > status;
+
+MariaDB [sampdb]> show status like 'Ssl%';
 
 on server
 mysql > show variables like 'have_ssl';
